@@ -26,8 +26,8 @@ const PaymentSummary: FC<PaymentSummaryProps> = ({
   total,
 }) => {
   return (
-    <div className="px-[5%] xl:px-[10%] w-full h-full">
-      <div className="relative w-full h-full md:overflow-hidden">
+    <div className="px-[5%] md:px-[18%] lg:px-[5%] xl:px-[10%] w-full h-full">
+      <div className="relative w-full h-full lg:overflow-hidden">
         <div className="flex justify-center">
           {" "}
           <CreditCard
