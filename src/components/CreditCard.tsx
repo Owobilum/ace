@@ -15,7 +15,7 @@ const CreditCard: FC<CreditCardProps> = ({
   return (
     <div className="w-fit">
       <div className="pt-2 relative w-fit">
-        <div className="bg-blue-600 h-6 w-[5.1875rem] rounded-full absolute top-0 left-[5.25rem]"></div>
+        <div className="bg-blue-600 h-6 w-[5.1875rem] rounded-b-full absolute top-0 left-[5.25rem]"></div>
         <div className="relative z-20 w-[15.625rem] h-[18.75rem] bg-gray-100/95 rounded-lg p-8 flex flex-col justify-between">
           <div className="flex justify-between items-center">
             <img

@@ -14,7 +14,7 @@ const PayModal: FC<{
   return (
     <ModalBase>
       <motion.div
-        className="w-full lg:w-[90%] bg-white px-[5%] py-10 font-montserrat"
+        className="w-full lg:w-[90%] bg-white font-montserrat"
         variants={fromTopAnimation}
         initial="initial"
         animate="final"
@@ -34,40 +34,42 @@ const PayModal: FC<{
             X
           </button>
         </div>
-        <div className="flex flex-col lg:flex-row gap-4 justify-between">
-          <div className="grow">
-            <header className="flex justify-between font-montserrat py-4">
-              <div className="flex gap-4 items-center">
-                <p className="h-10 w-10 bg-blue-500 rounded-full grid place-items-center">
-                  <img
-                    src="/assets/images/credit-card.png"
-                    alt="logo"
-                    className="w-5 h-5"
-                  />
-                </p>
-                <p className="font-bold text-blue-900 lg:text-lg">
-                  AceCoin<span className="font-normal">Pay</span>
-                </p>
-              </div>
-              <div className="flex gap-1">
-                <div className="date_value">0</div>
-                <div className="date_value">1</div>{" "}
-                <div className="flex items-center">:</div>
-                <div className="date_value">1</div>{" "}
-                <div className="date_value">9</div>{" "}
-              </div>{" "}
-            </header>
-            <PayForm />
-          </div>
-          <div className="grow-0 w-full xl:w-[28.125rem] min-h-[555px] lg:min-h-[400px]">
-            <PaymentSummary
-              company="Apple"
-              orderNumber={1266201}
-              product="Macbook Air"
-              vat={100}
-              companyLogo="/assets/images/apple-logo.svg"
-              total={549.99}
-            />
+        <div className="px-[5%] py-10">
+          <div className="flex flex-col lg:flex-row gap-4 justify-between">
+            <div className="grow">
+              <header className="flex justify-between font-montserrat py-4">
+                <div className="flex gap-4 items-center">
+                  <p className="h-10 w-10 bg-blue-500 rounded-full grid place-items-center">
+                    <img
+                      src="/assets/images/credit-card.png"
+                      alt="logo"
+                      className="w-5 h-5"
+                    />
+                  </p>
+                  <p className="font-bold text-blue-900 lg:text-lg">
+                    AceCoin<span className="font-normal">Pay</span>
+                  </p>
+                </div>
+                <div className="flex gap-1">
+                  <div className="date_value">0</div>
+                  <div className="date_value">1</div>{" "}
+                  <div className="flex items-center">:</div>
+                  <div className="date_value">1</div>{" "}
+                  <div className="date_value">9</div>{" "}
+                </div>{" "}
+              </header>
+              <PayForm />
+            </div>
+            <div className="grow-0 w-full xl:w-[28.125rem] min-h-[555px] lg:min-h-[400px]">
+              <PaymentSummary
+                company="Apple"
+                orderNumber={1266201}
+                product="Macbook Air"
+                vat={100}
+                companyLogo="/assets/images/apple-logo.svg"
+                total={549.99}
+              />
+            </div>
           </div>
         </div>
       </motion.div>
