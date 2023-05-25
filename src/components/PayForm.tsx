@@ -14,8 +14,8 @@ function PayForm(): ReactElement {
   const [isVerified] = useState(true);
 
   const parseString = (string: string) => {
-    const parsedString = string.replaceAll(" - ", "");
-    return parsedString?.match(/.{1,4}/g)?.join(" - ") || "";
+    const parsedString = string.replaceAll(" - ", ""); //remove all dashes with space to it's left and right
+    return parsedString?.match(/.{1,4}/g)?.join(" - ") || ""; // regex adds a spaced dashed after every 4 characters
   };
 
   const cardDetailsHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
